@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,42 +10,145 @@
     <link rel="stylesheet" media="screen and (max-width: 1170px)" href="Phone.css">
 </head>
 <style>
-    *{
-        margin:0;
-        padding:0;
+    * {
+        margin: 0;
+        padding: 0;
     }
-    .rate{
-        float:left;
+
+    .rate {
+        float: left;
         height: 46px;
         padding: 0px;
     }
-    .rate:not(:checked)> input{
+
+    .rate:not(:checked)>input {
         position: absolute;
-        top:-9999px;
+        top: -9999px;
     }
-    .rate:not(:checked)> label{
+
+    .rate:not(:checked)>label {
         float: right;
-        width:1em;
+        width: 1em;
         overflow: hidden;
-        white-space:nowrap;
-        cursor:pointer;
-        font-size:30px;
-        color:#ccc;
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 30px;
+        color: #ccc;
     }
-    .rate:not(:checked)> label:before{
-        content: '*';
+
+    .rate:not(:checked)>label:before {
+        content: '★ ';
     }
-    </style>
+
+    .rate>input:checked~label {
+        color: #ffc700;
+    }
+
+    .rate:not(:checked)>label:hover,
+    .rate:not(:checked)>label:hover~label {
+        color: #deb217;
+    }
+
+    .rate>input:checked+label:hover,
+    .rate>input:checked+label:hover~label,
+    .rate>input:checked~label:hover,
+    .rate>input:checked~label:hover~label,
+    .rate>label:hover~input:checked~label {
+        color: #c59b08;
+    }
+</style>
+
 <body>
-    <div class="rate">
-        <input type="radio" id="star5" name="rate" value="5"/>
-        <label for="star5" title="text">5 stars</label>
-        <input type="radio" id="star4" name="rate" value="4"/> 
-        <label for="star4" title="text">4 stars</label>
-        <input type="radio" id="star3" name="rate" value="3"/> 
-        <label for="star3" title="text">3 stars</label>
-        <input type="radio" id="star2" name="rate" value="2"/> 
-        <label for="star2" title="text">2 stars</label>
-    </div>
+    <section id="review">
+        <h1 class="h-primary center">Coaching Reviews</h1>
+        <div id="services-city">
+            <div class="box1">
+                <img src="" alt="">
+                <div class="rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                </div>
+                <h2 class="h-secondary">Bangalore</h2>
+            </div>
+            <div class="box1">
+                <img src="" alt="">
+                <div class="rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                </div>
+                <h2 class="h-secondary">Lucknow</h2>
+            </div>
+            <div class="box1">
+                <img src="" alt="">
+                <div class="rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                </div>
+                <h2 class="h-secondary">Pune</h2>
+            </div>
+            <div class="box1">
+                <img src="" alt="">
+                <div class="rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                </div>
+                <h2 class="h-secondary">Mumbai</h2>
+            </div>
+            <div class="box1">
+                <img src="" alt="">
+                <div class="rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                </div>
+                <h2 class="h-secondary">Hyderabad</h2>
+            </div>
+            <div class="box1">
+                <img src=""" alt="">
+                <div class="rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                </div>
+                <h2 class="h-secondary">Chennai</h2>
+            </div>
+        </div>
+       
+    </section>
 </body>
+
 </html>
